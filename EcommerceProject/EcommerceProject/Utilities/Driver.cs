@@ -22,7 +22,7 @@ namespace EcommerceProject.Utilities
                     //driver.Manage().Window.Maximize();
                     break;
                 case "Chrome":
-                    driver = new ChromeDriver();
+                    driver = new ChromeDriver("c:\\");
                     driver.Navigate().GoToUrl(url);
                     driver.Manage().Timeouts().ImplicitWait = System.TimeSpan.FromSeconds(60);
                     driver.Manage().Window.Maximize();
